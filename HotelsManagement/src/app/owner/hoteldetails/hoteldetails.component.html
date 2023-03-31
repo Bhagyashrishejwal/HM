@@ -1,0 +1,100 @@
+<body>
+    <button mat-button color="warn" routerLink="/Owner/ownersuccess">Back</button>
+
+
+    
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>Register</h2>
+        </div>
+        <div class="main">
+            <h1 *ngIf="newRegistration" style="text-align:center ;"><b>Register Here</b></h1>
+            <h1 *ngIf="!newRegistration" style="text-align:center ;"><b>Updation Of Hotel Details</b></h1>
+        <form [formGroup]="registrationForm!" autocomplete="off">
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Owner Name </mat-label><br>
+                <mat-hint>Enter owner name here </mat-hint>
+                <input matInput type="text" formControlName="userName" placeholder="Enter owner name" matInput required />
+               <!---- <mat-error *ngIf="registrationForm.get('userName').errors?.['required']">Required Name</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Hotel Name </mat-label><br>
+                <mat-hint>Enter Hotel name here </mat-hint>
+                <input matInput type="text" formControlName="hotelName" placeholder="Enter Hotel name" matInput required />
+               <!---- <mat-error *ngIf="registrationForm.get('hotelName').errors?.['required']">Required Hotel Name</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Hotel Address</mat-label><br>
+                <mat-hint>Enter Hotel Address </mat-hint>
+                <input matInput type="text" formControlName="hotelAddress" placeholder="Enter Hotel Address" matInput required />
+                <!--<mat-error *ngIf="registrationForm.get('hotelAddress').errors?.['required']">Required Hotel Address</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Mobile Number</mat-label><br>
+                <mat-hint>Enter Mobile Number</mat-hint>
+                <input matInput type="text" formControlName="hotelMobile" placeholder="Enter  Mobile Number" matInput required />
+               <!--- <mat-error *ngIf="registrationForm.get('hotelMobile').errors?.['required']">Required Mobile Number</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Hotel Menu List </mat-label><br>
+                <mat-hint>Enter Menu List here </mat-hint>
+                <input matInput type="text" formControlName="hotelMenu" placeholder="Enter Menu" matInput required />
+               <!---- <mat-error *ngIf="registrationForm.get('hotelMenu').errors?.['required']">Enter Menu</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Room Available </mat-label><br>
+                <mat-hint>Enter Room Available </mat-hint>
+                <input matInput type="text" formControlName="roomAvailable" placeholder="Enter Room Available" matInput required />
+               <!---- <mat-error *ngIf="registrationForm.get('roomAvailable').errors?.['required']">Room Available</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Hotel Name </mat-label><br>
+                <mat-hint>Enter Hotel name here </mat-hint>
+                <input matInput type="email" formControlName="userPass" placeholder="Enter Password" matInput required />
+               <!--- <mat-error *ngIf="registrationForm.get('userPass').errors?.['required']">Required Password</mat-error>-->
+            </mat-form-field>
+        </div>
+        <div class="ss">
+        <label>
+            <input type="checkbox" formControlName="owenrCheck" required> Accept T & C
+        </label>
+        </div>
+        
+
+
+        <div style="text-align: center;">
+            <button *ngIf="newRegistration" [disabled]="registrationForm.invalid" class="btn" mat-raised-button color="accent"
+                (click)="submit()">Register</button>
+           
+                <button *ngIf="!newRegistration" [disabled]="registrationForm.invalid" class="btn" mat-raised-button color="primary"
+                (click)="submit()">Update </button>
+        
+    </div>
+        <br>
+        
+        </form>
+    </div>
+    
+    </mat-card-content>
+    
+</mat-card>
+</body>
+
+
+
+
+

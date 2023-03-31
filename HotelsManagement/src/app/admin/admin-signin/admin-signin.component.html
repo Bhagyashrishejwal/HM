@@ -1,0 +1,51 @@
+
+<!--<button mat-button color="warn" routerLink="/Admin/adminlanding">Back</button>-->
+<body>
+<div class="container">
+    <button mat-button color="warn" routerLink="/Admin/admin-landing">Back</button>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>
+                        Sign In
+                    </h1>
+                    <h6>Please enter email & password</h6>
+                </div>
+                
+                    <form [formGroup]="loginForm!" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" formControlName="Email" placeholder="Enter Email"><br>
+                           <!---- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+                         <!----  <span class="text-danger" *ngIf="loginForm.controls['Email'].dirty && loginForm.hasError('required','Email')">"Email id is required"</span>-->
+                         <mat-error *ngIf="loginForm.get('Email')?.touched && 
+        loginForm.get('Email')?.errors?.['required']">User Name is Required</mat-error>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Enter Password" formControlName="Password">
+                               <!----<span class="text-danger" *ngIf="loginForm.controls['Password'].dirty && loginForm.hasError('required','Password')">"Password   is required"</span>-->
+                        
+                        <mat-error *ngIf="loginForm.get('Password')?.touched && 
+                        loginForm.get('Password')?.errors?.['required']">Password is Required</mat-error></div>
+                    
+                        <!--- <button type="submit" class="ss" class="btn btn-primary">Login</button>-->
+                       <!---- <button  class="btn" (click)="login()" mat-raised-button color="primary"
+                        >Sign in</button>-->
+                        <button  class="btn" mat-raised-button color="accent"
+        (click)="login()">Submit</button>
+        
+        
+                    
+                    <div>New user?<a routerLink="/Admin/sign-up">Click to Signup  </a> </div>
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,127 @@
+{
+  "Admin": [
+    {
+      "firstname": "cfgj",
+      "lastname": "dfghjjk",
+      "mobile": 45667898,
+      "password": "333333",
+      "email": "ss@gmail.com",
+      "gender": "female",
+      "userCheck": true,
+      "id": 1
+    },
+    {
+      "firstname": "Sanu",
+      "lastname": "Shejwal",
+      "mobile": 2343256785,
+      "password": "11111111",
+      "email": "sn@gmail.com",
+      "gender": "female",
+      "userCheck": true,
+      "id": 2
+    },
+    {
+      "firstname": "Sana",
+      "lastname": "Kadam",
+      "mobile": 5674325678,
+      "password": "4455",
+      "email": "sana@gmail.com",
+      "gender": "female",
+      "userCheck": true,
+      "id": 3
+    }
+  ],
+  "owner": [
+    {
+      "firstname": "Sagar",
+      "lastname": "Barmukh",
+      "mobile": 5675436789,
+      "password": "7777",
+      "email": "sagar@gmail.com",
+      "gender": "male",
+      "userCheck": true,
+      "id": 1
+    }
+  ],
+  "hoteldetails": [
+    {
+      "userName": "Saanvi",
+      "hotelName": "BB",
+      "hotelAddress": "saanvi@gmail.com",
+      "hotelMobile": "2345654789",
+      "hotelMenu": "Paneer",
+      "roomAvailable": "4",
+      "owenrCheck": true,
+      "userPass": "qwqw",
+      "id": 2
+    },
+    {
+      "userName": "dfg",
+      "hotelName": "fhh",
+      "hotelAddress": "gg",
+      "hotelMobile": "4444444444",
+      "hotelMenu": "gh",
+      "roomAvailable": "5",
+      "owenrCheck": true,
+      "userPass": "gh566",
+      "id": 3
+    },
+    {
+      "userName": "cvb",
+      "hotelName": "cvv",
+      "hotelAddress": "cv",
+      "hotelMobile": "5676543323",
+      "hotelMenu": "df",
+      "roomAvailable": "6",
+      "owenrCheck": true,
+      "userPass": "ffg",
+      "id": 4
+    },
+    {
+      "userName": "dfg",
+      "hotelName": "vbc",
+      "hotelAddress": "dfg",
+      "hotelMobile": "3453267890",
+      "hotelMenu": "fg",
+      "roomAvailable": "7",
+      "owenrCheck": true,
+      "userPass": "gh",
+      "id": 5
+    }
+  ],
+  "User": [
+    {
+      "firstname": "Akash",
+      "lastname": "Deshmukh",
+      "mobile": 2345678765,
+      "password": "akash",
+      "email": "akash@gmail.com",
+      "gender": "male",
+      "userCheck": true,
+      "id": 1
+    }
+  ],
+  "hotelbooking": [
+    {
+      "userName": "Rakesh",
+      "userAddress": "Mumbai",
+      "bookingAmount": "1000",
+      "userPass": "rakesh",
+      "id": 1
+    },
+    {
+      "userName": "Aarav",
+      "userAddress": "Satara",
+      "bookingAmount": "1000",
+      "userPass": "sasa",
+      "id": 2
+    },
+    {
+      "userName": "Nagesh",
+      "userAddress": "Kothrud",
+      "bookingAmount": "1000",
+      "userPass": "kothrud",
+      "id": 3
+    }
+  ]
+}

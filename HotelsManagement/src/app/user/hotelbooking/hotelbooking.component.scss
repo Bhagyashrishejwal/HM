@@ -1,0 +1,24 @@
+.form-container{
+   // display:grid;
+   //grid-template-columns:150% 150% 150% 150%;
+   display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 16px;
+   text-align: center;
+   margin-left:40px;
+   
+}
+.mat-form-field{
+width:500%;
+
+}
+body{ //background-image: url('~HotelsManagement/src/assets/rr.jpg');
+    background-image: url('~src/assets/book.jpg');
+     background-repeat: no-repeat; 
+     background-size:cover; }
+     mat-card{
+        max-width:600px;
+        margin:2em auto;
+        text-align:center;
+        max-height:1200px;}
+ 

@@ -1,0 +1,93 @@
+
+<body>
+<div class="container">
+    <button mat-button color="accent" routerLink="/Owner/owner-landing">Back</button>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="text-center">
+                    <h1>
+                       Owner Sign Up
+                    </h1>
+                    <h6>Please enter email & password</h6>
+                </div>
+                <form>
+                    <form [formGroup]="signupForm!" autocomplete="off">
+                        <div class="mb-1">
+                            <label for="exampleInputPassword1" class="form-label">First
+                                Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                formControlName="firstname">
+                            <span class="text-danger" *ngIf="signupForm.controls['firstname'].dirty && 
+                               signupForm.hasError('required','firstname')">"First name is
+                                required"</span>
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputPassword1" class="form-label">Last
+                                Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1"
+                                formControlName="lastname">
+                            <span class="text-danger" *ngIf="signupForm.controls['lastname'].dirty && 
+                            signupForm.hasError('required','lastname')">"Last name is
+                                required"</span>
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputPassword1" class="form-label">Mobile
+                                Number</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1"
+                                formControlName="mobile">
+                            <span class="text-danger" *ngIf="signupForm.controls['mobile'].dirty && 
+                                signupForm.hasError('required','mobile')">"Mobile number is
+                                required"</span>
+                        </div>
+
+
+                        <div class="mb-1">
+                            <label for="exampleInputEmail" class="form-label">Email
+                                Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail"
+                                aria-describedby="emailHelp" formControlName="email">
+                            <div id="emailHelp" class="form-text">We'll never share your email
+                                with anyone else.</div>
+                            <span class="text-danger" *ngIf="signupForm.controls['email'].dirty &&
+                                signupForm.hasError('required','email')">"Email id is required"</span>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="exampleInputPassword1"
+                                class="form-label">Password</label>
+                            <input type="password" class="form-control"
+                                id="exampleInputPassword1" formControlName="password">
+                            <span class="text-danger" *ngIf="signupForm.controls['password'].dirty &&
+                                signupForm.hasError('required','password')">"Password is
+                                required"</span>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="gender" class="form-label">Select Gender</label><br>
+                            <input type="radio" value="male" formControlName="gender">Male
+                            <input type="radio" value="female" formControlName="gender">Female
+                            <br>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" formControlName="userCheck" required> Accept
+                            T & C
+                        </label>
+
+
+
+                        <!--- <button type="submit" class="ss" class="btn btn-primary">Login</button>-->
+                       <button [disabled]="signupForm.invalid" class="btn" mat-raised-button
+                            color="primary"  (click)="postOwnerdata(signupForm.value)">Admin
+                            SignUp </button>
+                    </form>
+                    <div>Already registered? Click to login<a routerLink="/Owner/ownersignin">
+                            Signin now </a> </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

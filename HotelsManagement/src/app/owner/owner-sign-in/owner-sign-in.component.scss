@@ -1,0 +1,31 @@
+.card{
+    margin-top:10px;
+    border:none;
+    width:500px;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    
+    background-color:rgb(200, 200, 227);
+    
+}
+.card h1,h6{
+color:#fff;
+}
+ label{
+    color:#fff;
+ }
+ .btn{
+    text-align:center;
+    margin: auto;
+    display:flex;
+    align-items: center;
+ }
+ body{ //background-image: url('~HotelsManagement/src/assets/rr.jpg');
+    background-image: url('~src/assets/restaurant.jpg');
+     background-repeat: no-repeat; 
+     background-size:cover; }
+ 

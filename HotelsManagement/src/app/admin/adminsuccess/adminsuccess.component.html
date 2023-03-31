@@ -1,0 +1,34 @@
+<body>
+
+<button class="bg" mat-raised-button color="primary"  routerLink="/Admin/admin-landing">Back</button>
+<h1 class="heading"><b>Hotel List</b></h1>
+<table border="2px black">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Owner Name</th>
+            <th>Hotel Name</th>
+            <th>Menu</th>
+            <th>Room Available</th>
+            <th>Hotel Address</th>
+            <th>Hotel Mobile</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of  hoteldetails">
+            <td>{{data.id}}</td>
+            <td>{{data.userName}}</td>
+            <td>{{data.hotelName}}</td>
+            <td>{{data.hotelMenu}}</td>
+            <td>{{data.roomAvailable}}</td>
+            <td>{{data.hotelAddress}}</td>
+            <td>{{data.hotelMobile}}</td>
+            <td><mat-icon (click)="deleteData(data.id)">delete</mat-icon></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+</body>
+
+
